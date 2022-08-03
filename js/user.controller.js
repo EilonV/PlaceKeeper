@@ -11,16 +11,16 @@ function onSliderValue() {
 }
 
 function loadUserColors() {
-    if (gUser){
+    if (gUser) {
         document.querySelector('body').style.backgroundColor = gUser.bgColor
         document.querySelector('body').style.color = gUser.txtColor
     }
-    else{
+    else {
         document.querySelector('body').style.backgroundColor = 'none'
         document.querySelector('body').style.color = 'black'
     }
 }
 
-function displayHoursTillBday(){
-    
+function displayHoursTillBday() {
+
 }

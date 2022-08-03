@@ -15,20 +15,43 @@
             Map
         </h1>
     </header>
-    
-    <section>
-        <a href="index.html">Go to Main</a>
+
+
+
+    <div class="googleMap container"></div>
+
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(29.557580625327397, 34.952028849477564),
+                zoom: 13,
+            };
+            var map = new google.maps.Map(document.querySelector(".googleMap"), mapProp);
+        }
+    </script>
+
+    <section class="container img">
+        <img src="img/locat.png" alt="pinpoint location">
     </section>
 
-    <section>
-        <a href="user-settings.html">Go to User Settings</a>
+    <section class="container redirects">
+        <section>
+            <a class="link" href="index.html">Go to Main</a>
+        </section>
+        <br>
+        <section>
+            <a class="link" href="user-settings.html" onclick="">Go to User Settings</a>
+        </section>
     </section>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKzRQ_T8hycz9xya8Z3fYL1H9EmRLQvfo&callback=myMap"></script>
+
 
     <script src="js/storage.service.js"></script>
     <script src="js/util.service.js"></script>
     <script src="js/place.service.js"></script>
     <script src="js/user.service.js"></script>
-    <script src="js/user.controller.js"></script> 
+    <script src="js/user.controller.js"></script>
 
 </body>
 
